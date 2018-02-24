@@ -1,0 +1,24 @@
+{
+  "name": "hue-scripts",
+  "version": "1.0.0",
+  "description": "RKH's Hue Scripts",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldheft/hue-scripts.git"
+  },
+  "keywords": [
+    "hue",
+    "phillips"
+  ],
+  "author": "Ron Heft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldheft/hue-scripts/issues"
+  },
+  "homepage": "https://github.com/ronaldheft/hue-scripts#readme",
+  "dependencies": {
+    "huejay": "^1.8.0"
+  }
+}
