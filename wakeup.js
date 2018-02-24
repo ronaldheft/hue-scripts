@@ -10,7 +10,7 @@ const setToDaylight = lightId => {
 	return client.lights.getById(lightId).then(light => {
 		light.on = true;
 		light.brightness = 254;
-		light.colorTemp = 222;
+		light.colorTemp = 219;
 		light.transitionTime = 60 * 15; // 15 minutes
 		return client.lights.save(light);
 	}).catch(error => {
