@@ -6,6 +6,21 @@ const client = new huejay.Client({
 	username: config.BRIDGE_USERNAME
 });
 
-client.lights.getById(7).then(light => {
+client.lights.getById(8).then(light => {
 	console.log(light);
 });
+
+client.groups.getAll()
+  .then(groups => {
+    for (let group of groups) {
+      console.log(`Group [${group.id}]: ${group.name}`);
+      console.log(`  Type: ${group.type}`);
+      console.log(`  Class: ${group.class}`);
+      console.log('  Light Ids: ' + group.lightIds.join(', '));
+      console.log('  State:');
+      console.log(`    Any on:     ${group.anyOn}`);
+      console.log(`    All on:     ${group.allOn}`);
+
+      console.log();
+    }
+  });

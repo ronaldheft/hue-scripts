@@ -1,5 +1,26 @@
-const let config = {
-	VAR: 'test'
+const config = {
+	BRIDGE_IP: '',
+	BRIDGE_ID: '',
+	BRIDGE_USERNAME: '',
+	LIGHTS: {
+		BEDROOM_TABLE: 7,
+		BEDROOM_FLOOR: 6,
+		BEDROOM_DESK_TASK: 5,
+		BEDROOM_DESK_FLOOR: 8
+	},
+	GROUPS: {
+		LIVING_ROOM: 1,
+		TV: 2,
+		HALL: 3,
+		BEDROOM: 4,
+		KITCHEN: 5,
+		DINING_ROOM: 6,
+		BATHROOM: 7
+	},
+	SCENES: {
+		BEDROOM_FULLY_DIMMED: 'LEaLvSgO2GIonLk',
+		BEDROOM_BED_TABLE_DIMMED: 'tlXaAUJt6XJv5qP'
+	}
 };
 
-export default config;
+module.exports = config;
